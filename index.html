@@ -1,1 +1,174 @@
-<h1>프로젝트 준비 중</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디자인 시안 확인</title>
+  <style>
+    :root {
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --text-main: #212529;
+      --text-sub: #6c757d;
+      --primary: #2563eb;
+      --border-color: #e9ecef;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header .badge {
+      display: inline-block;
+      background-color: #e0e7ff;
+      color: #3730a3;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--text-sub);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    /* 시안 이미지 영역 */
+    .preview-box {
+      width: 100%;
+      background-color: #f1f3f5;
+      border: 2px dashed #ced4da;
+      border-radius: 8px;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .preview-box img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* 안내 및 변경사항 목록 */
+    .notes-list {
+      list-style: none;
+    }
+
+    .notes-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      color: var(--text-main);
+    }
+
+    .notes-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    /* 피드백 버튼 영역 */
+    .action-area {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <span class="badge">검토용 시안 v1.0</span>
+      <h1>프로젝트 디자인 검토 시안</h1>
+      <p>업체 검토 및 피드백 전달을 위한 페이지입니다.</p>
+    </header>
+
+    <!-- 1. 시안 이미지 영역 -->
+    <section class="card">
+      <h2>1. 디자인 시안</h2>
+      <div class="preview-box">
+        <!-- 실제 이미지 파일 경로(예: ./design-preview.png)를 src에 넣으세요 -->
+        <img src="https://via.placeholder.com/800x500?text=Design+Preview+Image" alt="디자인 시안">
+      </div>
+    </section>
+
+    <!-- 2. 주요 안내 / 포인트 -->
+    <section class="card">
+      <h2>2. 주요 확인 포인트</h2>
+      <ul class="notes-list">
+        <li>전체적인 브랜드 컬러 및 메인 폰트 스타일 적용 여부</li>
+        <li>모바일 레이아웃 및 반응형 그리드 구성</li>
+        <li>주요 CTA 버튼 및 상단 메뉴 구성 확인</li>
+      </ul>
+    </section>
+
+    <!-- 3. 피드백 안내 -->
+    <div class="action-area">
+      <a href="mailto:your-email@example.com?subject=디자인 시안 피드백" class="btn">피드백메일 보내기</a>
+    </div>
+  </div>
+
+</body>
+</html>
